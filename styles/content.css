@@ -37,13 +37,20 @@
 
 .topic img {
     grid-area: img-icon;
+    align-self: center;
+    justify-self: end;
 }
 
 .topic p {
     grid-area: answer;
+    font-weight: 300;
+    color: var(--pale-purple);
+    display: none;
 }
 
 .line {
    border: 0.5px solid var(--light-pink);
    width: 100%;
+   margin: 2rem 0;
 }
+
