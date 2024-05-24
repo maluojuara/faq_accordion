@@ -15,5 +15,6 @@ function toggleFAQ (questionIcon, answer) {
 
     questionIcon.setAttribute('aria-expanded', !isExpanded);
     questionIcon.src = isExpanded ? 'assets/images/icon-plus.svg' : 'assets/images/icon-minus.svg';
+    questionIcon.alt = isExpanded ? 'Show More' : 'Show less';
     answer.style.display = isExpanded ? 'none' : 'block';
 }
