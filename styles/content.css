@@ -40,6 +40,10 @@
     color: var(--pink);
 }
 
+.question-icon:hover {
+    opacity: 70%;
+}
+
 
 .answer {
     font-weight: 300;
