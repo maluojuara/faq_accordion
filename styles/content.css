@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     background-color: var(--white);
-    width: 42%;
-    height: 60%;
+    width: 45%;
+    height: 70%;
     margin: auto;
     margin-top: 10.5rem;
     margin-bottom: 10.5rem;
@@ -18,33 +18,34 @@
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 2rem;
+    gap: 1.5rem;
+    align-items: center;
 }
 
-.topic {
-    display: grid;
-    grid-template-areas: 
-    "question img-icon"
-    "answer answer";
-    row-gap: 1.5rem;
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 1.5rem;
 }
 
-.topic h2 {
-    grid-area: question;
+.question-text {
     font-size: 18px;
     font-weight: 500;
     color: var(--dark-purple);
 }
 
-.topic img {
-    grid-area: img-icon;
-    align-self: center;
-    justify-self: end;
+.question-text:hover {
+    color: var(--pink);
 }
 
-.topic p {
-    grid-area: answer;
+
+.answer {
     font-weight: 300;
     color: var(--pale-purple);
+    margin-top: 1.5rem;
+    line-height: 150%;
     display: none;
 }
 
@@ -54,3 +55,28 @@
    margin: 2rem 0;
 }
 
+@media screen and (max-width: 480px){
+
+    .faq-container {
+        width: 60%;
+        height: 80%;
+    }
+
+    .title {
+        font-size: 32px;
+        gap: 0.5rem;
+    }
+
+    .title__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .question-text {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+}
